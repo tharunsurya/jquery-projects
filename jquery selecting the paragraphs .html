@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+   <html lang="eng">
+      <head>
+           <title>
+               jquery selecting the paragraphs 
+           </title>
+           <style>
+               p{
+                  text-align: center;
+                  color: aqua;
+                  background-color: blueviolet;
+               }
+               button{
+                  border: 30px;
+                  background-color: red;
+                  color: blue;
+                  align-items: center;
+               }
+               div{
+                  text-align: center;
+               }
+           </style>
+           <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+      </head>
+      <body>
+         <script>
+               $(document).ready(function(){
+                  $("#show").click(function(){
+                     $("p").show();
+                  });
+                     $("#hide").click(function(){
+                          $("p").hide();
+                     });
+                  });
+         </script>
+        <h1>
+              In this module we are writing the code to maniplate the paragraphs using jquery by keeping buttons
+        </h1>
+        <div>
+           <p>
+                this is surya and this an paragraph and when i click hide this para hides
+           </p>
+           <button id="hide">hide</button>
+           <button id="show" >show</button>
+        </div>
+      </body>
+       
+   </html>
